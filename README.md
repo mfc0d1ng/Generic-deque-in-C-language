@@ -70,8 +70,6 @@ int main()
     deque_push_back(char, &chars, 'D');
     deque_push_front(char, &chars, 'A');
 
-    deque_resize(&chars, 100);
-
     puts("Contents of chars is: ");
     for (char* it = deque_begin(&chars); it != deque_end(&chars); ++it)
     {
