@@ -1,6 +1,6 @@
 # Generic deque in C language
-A shared library which provides a set of functions for handling deque operations in C. Note that the library doesn't provide methods for constructing and copying the vector 
-elements because C isn't object-oriented programming language. User is responsible for constructing and copying the vector elements.
+A shared library which provides a set of functions for handling deque operations in C. Note that the library doesn't provide methods for constructing and copying the deque 
+elements because C isn't object-oriented programming language. User is responsible for constructing and copying the deque elements.
 
 <h2>How to download?</h2>
 You can download it <a href="https://github.com/user-attachments/files/19638695/libdeque.zip">here</a>
