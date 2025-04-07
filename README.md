@@ -9,6 +9,6 @@ You can download it <a href="https://github.com/user-attachments/files/19638695/
 Unzip the downloaded file and move libdeque.so to /usr/lib
 
 <h2>How to link?</h2>
-You can link the library to your C project as follows: gcc example.c -l vec <br>
+You can link the library to your C project as follows: gcc example.c -l deque <br>
 And don't forget to include deque.h, note that deque.h depends on deque_details.h so keep both in the same directory.
 
