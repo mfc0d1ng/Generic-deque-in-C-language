@@ -12,3 +12,40 @@ Unzip the downloaded file and move libdeque.so to /usr/lib
 You can link the library to your C project as follows: gcc example.c -l deque <br>
 And don't forget to include deque.h, note that deque.h depends on deque_details.h so keep both in the same directory.
 
+<br>
+<h2> Examples </h2>
+
+* Example A:
+
+<pre>
+<code class="language-c">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include "deque.h"
+
+int main()
+{
+    /* Construct stack */
+    deque stack = deque_new(int);
+
+    /* Push data into stack */
+    for (size_t i = 0; i < 10; i++)
+    {
+        deque_push_front(int, &stack, i);
+    }
+
+    puts("Contents of stack is: ");
+    while (!deque_empty(&stack))
+    {
+        printf(" %i\n", deque_front(int, &stack));
+        /* Pop the top element in stack */
+        deque_pop_front(&stack);
+    }
+    
+    /* Erase stack */
+    deque_destructor(&stack);    
+    
+    return EXIT_SUCCESS;
+}
+</code>
+</pre>
