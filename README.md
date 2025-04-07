@@ -37,6 +37,7 @@ int main()
     puts("Contents of stack is: ");
     while (!deque_empty(&stack))
     {
+        /* Print the top element in stack */
         printf(" %i\n", deque_front(int, &stack));
         /* Pop the top element in stack */
         deque_pop_front(&stack);
