@@ -50,3 +50,38 @@ int main()
 }
 </code>
 </pre>
+
+* Example B:
+
+<pre>
+<code class="language-c">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include "deque.h"
+
+int main()
+{
+    /* Construct chars */
+    deque chars = deque_new(char);
+
+    deque_push_back(char, &chars, 'C');
+    deque_push_front(char, &chars, 'B');
+
+    deque_push_back(char, &chars, 'D');
+    deque_push_front(char, &chars, 'A');
+
+    deque_resize(&chars, 100);
+
+    puts("Contents of chars is: ");
+    for (char* it = deque_begin(&chars); it != deque_end(&chars); ++it)
+    {
+        printf("%c ", *it);
+    }
+    
+    deque_destructor(&chars);
+    
+    return EXIT_SUCCESS;
+}
+</code>
+</pre>
+
