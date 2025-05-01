@@ -3,14 +3,13 @@ A shared library which provides a set of functions for handling deque operations
 elements because C isn't object-oriented programming language. User is responsible for constructing and copying the deque elements.
 
 <h2>How to download?</h2>
-You can download it <a href="https://github.com/user-attachments/files/19917506/libdeque.zip">here</a>
+You can download it <a href="https://github.com/user-attachments/files/19998347/libdeque.zip">here</a>
 
 <h2>How to install?</h2>
 Unzip the downloaded file and move libdeque.so to /usr/lib
 
 <h2>How to link?</h2>
-You can link the library to your C project as follows: gcc example.c -l deque <br>
-And don't forget to include deque.h, note that deque.h depends on deque_details.h so keep both in the same directory.
+You can link the library to your C project as follows: gcc example.c -l deque
 
 <br>
 <h2> Examples </h2>
@@ -26,7 +25,7 @@ And don't forget to include deque.h, note that deque.h depends on deque_details.
 int main()
 {
     /* Construct stack */
-    deque stack = deque_new(int);
+    deque stack = deque_new();
 
     /* Push data into stack */
     for (size_t i = 0; i < 10; i++)
@@ -62,7 +61,7 @@ int main()
 int main()
 {
     /* Construct chars */
-    deque chars = deque_new(char);
+    deque chars = deque_new();
 
     deque_push_back(char, &chars, 'C');
     deque_push_front(char, &chars, 'B');
@@ -71,7 +70,7 @@ int main()
     deque_push_front(char, &chars, 'A');
 
     puts("Contents of chars is: ");
-    for (char* it = deque_begin(&chars); it != deque_end(&chars); ++it)
+    for (char* it = deque_begin(char, &chars); it != deque_end(char, &chars); ++it)
     {
         printf("%c ", *it);
     }
