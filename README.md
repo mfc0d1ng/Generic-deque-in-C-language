@@ -1,5 +1,5 @@
 # Generic deque in C language
-A shared library which provides a set of functions for handling dynamic deque in C.
+A shared library which provides a set of functions for handling dynamic deques in C.
 
 <h2>How to download?</h2>
 You can download it <a href="https://github.com/user-attachments/files/20094178/libdeque.zip">here</a>
