@@ -42,7 +42,7 @@ int main()
     }
     
     /* Erase stack */
-    deque_destructor(&stack);    
+    deque_destroy(&stack);    
     
     return EXIT_SUCCESS;
 }
@@ -74,7 +74,7 @@ int main()
         printf("%c ", *it);
     }
     
-    deque_destructor(&chars);
+    deque_destroy(&chars);
     
     return EXIT_SUCCESS;
 }
